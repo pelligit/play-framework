@@ -19,6 +19,10 @@
 
 ### 开始
 
+下载项目：`git clone https://github.com/pelligit/play-framework.git`
+
+进入项目所在目录：`cd play-framework`
+
 > 使用脚本开始项目
 
 ```bash
@@ -73,4 +77,30 @@ $ cd ..
 * angular项目主页：`http://127.0.0.1:4200`
 * react项目主页：`http://127.0.0.1:3000`
 * vue项目主页：`http://127.0.0.1:3578`
-* vuecli项目主页：`http://127.0.0.1:8989`
+* vuecli项目主页：`http://127.0.0.1:8080`
+
+### 项目效果
+
+**Angular效果**
+
+<img alt="angular效果" src="./play-ng.png" style="box-shadow: 0 0 15px #ccc" />
+
+**React效果**
+
+<img alt="react效果" src="./play-react.png" style="box-shadow: 0 0 15px #ccc" />
+
+**Vue效果**
+
+<img alt="vue效果" src="./play-vue.png" style="box-shadow: 0 0 15px #ccc" />
+
+**Vue效果**
+
+<img alt="vue效果" src="./play-vuecli.png" style="box-shadow: 0 0 15px #ccc" />
+
+**API主页效果**
+
+<img alt="API主页的效果" src="./play-api-home.png" style="box-shadow: 0 0 15px #ccc" />
+
+**API user接口效果**
+
+<img alt="API user接口" src="./play-api-user.png" style="box-shadow: 0 0 15px #ccc" />
