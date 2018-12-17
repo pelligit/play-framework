@@ -1,0 +1,7 @@
+.show-or-hide{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	box-shadow: 0 0 15px #ccc;
+	margin: 20px;
+}

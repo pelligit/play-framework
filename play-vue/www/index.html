@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue游乐园</title>
+	
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	
+	<script src="./libs/axios/axios.0.18.0.min.js"></script>
+	<script type="text/javascript" src="./vue.js"></script>
+	<script type="text/javascript" src="./vue-router.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<div>第一句话：{{ message }}</div>
+
+		<hr />
+
+		<div>
+			<img src="./assets/map.png" />
+		</div>
+
+		<hr />
+
+		<div>
+			<button v-on:click="clickBtn">点击一下</button>
+			<p>{{ click_msg }}</p><span>点击次数：{{ click_count }}</span>
+		</div>
+		<hr />
+
+		<ul>
+			<li v-for="item of list_data">
+				<span>姓名：{{item.name}}</span><span>年龄：{{item.age}}</span>
+			</li>
+		</ul>
+
+		<hr />
+
+		<div>
+			<button @click="showOrHide">显示或者隐藏</button>
+
+			<div class="show-or-hide" v-if="is_show">
+				显示或者隐藏的元素
+			</div>
+		</div>
+		
+		<hr />
+		
+		<div>
+			<p>表单</p>
+			<div>输入内容：{{ input_content }}</div>
+			<input v-model="input_content" @input="inputChange" type="text" >
+			<div>数据变化了{{input_click_count}}次</div>
+			<hr>
+			<p>文本域表单</p>
+			<div style="white-space: pre-line;">文本域内容: {{ textarea_content }}</div>
+			<textarea v-model="textarea_content" @input="textAreaChange" placeholder="这里是文本域"></textarea>
+			<div>文本域数据变化次数：{{ textarea_change_count }}</div>
+        </div>
+		<hr />
+        <div>
+        	{{ ajax_data }}
+		</div>
+		<hr />
+		<app-another content="这是另一个组件的内容"></app-another>
+	</div>
+	
+	<script type="text/javascript" src="./list-data.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
