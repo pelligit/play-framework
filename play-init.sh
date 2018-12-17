@@ -1,27 +1,25 @@
 #!/bin/bash
 
-cd play-api
-cnpm install
-cd ..
+root_path=`pwd`
 
-cd play-libs
-cnpm install
-cd ..
+api_path=$root_path"/play-api"
+ng_path=$root_path"/play-ng"
+react_path=$root_path"/play-react"
+vue_path=$root_path"/play-vue"
+vuecli_path=$root_path"/play-vuecli"
 
-cd play-ng
-cnpm install
-cd ..
+function init_project(){
+    cd $1
+    cnpm install >> init-log& 
+}
 
-cd play-react
-cnpm install
-cd ..
+init_project $api_path
 
-cd play-vue
-cnpm install
-cd ..
+init_project $ng_path
 
-cd play-vuecli
-cnpm install
-cd ..
+init_project $react_path
 
+init_project $vue_path
+
+init_project $vuecli_path
 

@@ -12,6 +12,7 @@
 # production
 /build
 /*/log
+/*/init-log
 
 # misc
 .DS_Store
