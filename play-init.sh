@@ -10,7 +10,7 @@ vuecli_path=$root_path"/play-vuecli"
 
 function init_project(){
     cd $1
-    cnpm install >> init-log& 
+    npm install >> init-log& 
 }
 
 init_project $api_path

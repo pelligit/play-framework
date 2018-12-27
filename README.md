@@ -31,7 +31,7 @@
 $ ./play-init.sh
 
 # 启动项目
-$ ./play-start.sh
+$ ./play-run.sh
 ```
 
 ---
